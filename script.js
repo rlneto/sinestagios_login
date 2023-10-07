@@ -1,11 +1,11 @@
 const CADASTRO = "https://estagios-ine-api.onrender.com/api/v1/auth/cadastro";
 const LOGIN = "https://estagios-ine-api.onrender.com/api/v1/auth/login";
 
-const nome = document.querySelector("#nome");
-const email = document.querySelector("#email");
-const senha = document.querySelector("#senha");
-const entrar = document.querySelector("#entrar");
-const cadastrar = document.querySelector("#cadastrar");
+const nome = document.getElementById("nome");
+const email = document.getElementById("email");
+const senha = document.getElementById("senha");
+const entrar = document.getElementById("entrar");
+const cadastrar = document.getElementById("cadastrar");
 
 entrar.addEventListener("click", async () => {
 	try {
