@@ -13,7 +13,7 @@ entrar.addEventListener("click", async () => {
 			email: email.value,
 			senha: senha.value,
 		});
-		localStorage.setItem("token", data.token);
+		sessionStorage.setItem("token", data.token);
 		const logout = document.querySelector("#logout");
 		logout.classList.remove("hidden");
 		const body = document.querySelector("body");
