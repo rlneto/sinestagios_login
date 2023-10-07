@@ -14,7 +14,7 @@ entrar.addEventListener("click", async () => {
 			senha: senha.value,
 		});
 		sessionStorage.setItem("token", data.token);
-		const logout = document.querySelector("#logout");
+		const logout = document.getElementById("#logout");
 		logout.classList.remove("hidden");
 		const body = document.querySelector("body");
 		const boasvindas = document.createElement("h1");
@@ -34,7 +34,6 @@ cadastrar.addEventListener("click", async () => {
 			email: email.value,
 			senha: senha.value,
 		});
-		const form = document.querySelector("#sign");
 		alert("Usuário cadastrado com sucesso!");
 	} catch (error) {
 		alert(error.message);
