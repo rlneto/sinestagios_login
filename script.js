@@ -14,6 +14,7 @@ entrar.addEventListener("click", async () => {
 			senha: senha.value,
 		});
 		sessionStorage.setItem("token", data.token);
+		const autenticado = sessionStorage.getItem("token");
 		const logout = document.querySelector("#logout");
 		logout.classList.remove("hidden");
 		const body = document.querySelector("body");
